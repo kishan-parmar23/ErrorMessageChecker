@@ -1,5 +1,5 @@
 from google import genai
-import constants 
+import temp.constants as constants 
 
 
 client = genai.Client(api_key=constants.User_API_KEY)
