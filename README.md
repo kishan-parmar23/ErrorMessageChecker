@@ -14,7 +14,7 @@ The tool takes a set of clear guidelines defined by me (based on common best pra
 
 ## How To Guide 
 
-    1. Replace the *constants.User_API_KEY* (line 6) with a string containing your API Key (E.g. *"Asbfibfi3fsdjbJFjbsfbdfU54AKJFB"*)
+    1. Replace the *constants.User_API_KEY* (index.py, line 6) with a string containing your Google Gemini API Key (E.g. "Asbfibfi3fsdjbJFjbsfbdfU54AKJFB")
     2. Run Script. 
     3. Provide the validation message you have written into the terminal. 
     4. Act on the improvements. 
