@@ -3,13 +3,15 @@ from google.genai import types
 import temp.constants as constants 
 
 
-client = genai.Client(api_key=constants.User_API_KEY)
-userMessage = "This program has encountered a problem and needs to close. Do you want to send an error report to Microsoft?"
+client = genai.Client(api_key=constants.User_API_KEY) #replace the 'constants.User_API_KEY' with your Google Gemini API Key
+
+ 
+userMessage = input("Enter Your Validation Message Here: ")
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash-lite", 
+    model="gemini-2.5-flash-lite", #Can be replaced with your choice of Google Gemini Model Codes.
     config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(thinking_budget=0), # Disables thinking
+        thinking_config=types.ThinkingConfig(thinking_budget=0), # Disables thinking. Set thinking_budget to 1 to enable advanced thinking. 
         system_instruction="""
         1. Persona and Role
 
